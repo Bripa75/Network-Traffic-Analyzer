@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Portfolio</title>
+    <style>
+        /* CSS for the portfolio section */
+        #portfolio {
+            padding: 40px;
+            background-color: #f4f4f4;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h3 {
+            font-size: 24px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .project p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .project pre {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .project a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Project Portfolio</h1>
+    </header>
+    
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <!-- Project 1 -->
+        <div class="project">
+            <h3>Network Traffic Analyzer</h3>
+            <img src="path_to_screenshot.png" alt="Network Traffic Analyzer Screenshot">
+            <p>This project is a Python-based tool for capturing and analyzing network traffic to detect security anomalies. It uses the Scapy library to intercept and analyze packets on a network.</p>
+            <pre><code>
+            # Example code snippet
+            from scapy.all import sniff
+
+            def packet_callback(packet):
+                print(packet.show())
+
+            sniff(prn=packet_callback, count=10)
+            </code></pre>
+            <a href="https://github.com/Bripa75/Network-Traffic-Analyzer" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
